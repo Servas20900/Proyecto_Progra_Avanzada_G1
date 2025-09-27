@@ -23,6 +23,9 @@ namespace FinanzasPrograAvanzada
                       "~/Scripts/bootstrap.js"));
 
             bundles.Add(new ScriptBundle("~/bundles/app").Include(
+                "~/StaticFiles/js/helpers.js",
+                "~/StaticFiles/js/config.js",
+                "~/StaticFiles/js/core.js",
                 "~/StaticFiles/js/jquery.js",
                 "~/StaticFiles/js/popper.js",
                 "~/StaticFiles/js/bootstrap.js",
