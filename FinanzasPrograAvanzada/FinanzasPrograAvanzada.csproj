@@ -197,6 +197,7 @@
     <Content Include="StaticFiles\fonts\boxicons.ttf" />
     <Content Include="StaticFiles\fonts\boxicons.woff" />
     <Content Include="StaticFiles\fonts\boxicons.woff2" />
+    <Content Include="Views\Shared\_LayoutInterno.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

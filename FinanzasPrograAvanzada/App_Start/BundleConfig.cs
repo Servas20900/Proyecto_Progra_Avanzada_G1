@@ -22,9 +22,23 @@ namespace FinanzasPrograAvanzada
             bundles.Add(new Bundle("~/bundles/bootstrap").Include(
                       "~/Scripts/bootstrap.js"));
 
+            bundles.Add(new ScriptBundle("~/bundles/app").Include(
+                "~/StaticFiles/js/jquery.js",
+                "~/StaticFiles/js/popper.js",
+                "~/StaticFiles/js/bootstrap.js",
+                "~/StaticFiles/js/perfect-scrollbar.js",
+                "~/StaticFiles/js/menu.js",
+                "~/StaticFiles/js/main.js"
+            ));
+
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
-                      "~/Content/site.css"));
+                      "~/Content/site.css",
+                      "~/StaticFiles/css/boxicons.css",
+                      "~/StaticFiles/css/core.css",
+                      "~/StaticFiles/css/theme-default.css",
+                      "~/StaticFiles/css/demo.css",
+                      "~/StaticFiles/css/perfect-scrollbar.css"));
         }
     }
 }
