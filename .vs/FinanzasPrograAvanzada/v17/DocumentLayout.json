@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Franco\\Documents\\Universidad Ufidelitas\\Progra Avanzada\\Proyecto_Progra_Avanzada_G1\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B002B28A-12FF-479B-900A-7EFB2BB3AD35}|FinanzasPrograAvanzada\\FinanzasPrograAvanzada.csproj|c:\\users\\franco\\documents\\universidad ufidelitas\\progra avanzada\\proyecto_progra_avanzada_g1\\finanzasprograavanzada\\views\\home\\principal.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B002B28A-12FF-479B-900A-7EFB2BB3AD35}|FinanzasPrograAvanzada\\FinanzasPrograAvanzada.csproj|solutionrelative:finanzasprograavanzada\\views\\home\\principal.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Principal.cshtml",
+              "DocumentMoniker": "C:\\Users\\Franco\\Documents\\Universidad Ufidelitas\\Progra Avanzada\\Proyecto_Progra_Avanzada_G1\\FinanzasPrograAvanzada\\Views\\Home\\Principal.cshtml",
+              "RelativeDocumentMoniker": "FinanzasPrograAvanzada\\Views\\Home\\Principal.cshtml",
+              "ToolTip": "C:\\Users\\Franco\\Documents\\Universidad Ufidelitas\\Progra Avanzada\\Proyecto_Progra_Avanzada_G1\\FinanzasPrograAvanzada\\Views\\Home\\Principal.cshtml",
+              "RelativeToolTip": "FinanzasPrograAvanzada\\Views\\Home\\Principal.cshtml",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABYAAABMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-27T20:20:54.896Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
