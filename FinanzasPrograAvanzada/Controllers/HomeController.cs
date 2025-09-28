@@ -13,6 +13,13 @@ namespace FinanzasPrograAvanzada.Controllers
             return View();
         }
 
+        [HttpGet]
+        public ActionResult Registro()
+        {
+            return View();
+        }
+
+
         public ActionResult Principal()
         {
             ViewBag.Message = "Your application description page.";
