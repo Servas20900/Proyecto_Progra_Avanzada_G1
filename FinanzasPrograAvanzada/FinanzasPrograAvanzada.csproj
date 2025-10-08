@@ -163,6 +163,7 @@
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
+    <Content Include="StaticFiles\css\app.css" />
     <Content Include="StaticFiles\css\boxicons.css" />
     <Content Include="StaticFiles\css\core.css" />
     <Content Include="StaticFiles\css\demo.css" />
@@ -170,7 +171,17 @@
     <Content Include="StaticFiles\css\perfect-scrollbar.css" />
     <Content Include="StaticFiles\css\theme-default.css" />
     <Content Include="StaticFiles\fonts\boxicons.svg" />
+    <Content Include="StaticFiles\img\avatars\avatar-2.jpg" />
+    <Content Include="StaticFiles\img\avatars\avatar-3.jpg" />
+    <Content Include="StaticFiles\img\avatars\avatar-4.jpg" />
+    <Content Include="StaticFiles\img\avatars\avatar-5.jpg" />
+    <Content Include="StaticFiles\img\avatars\avatar.jpg" />
+    <Content Include="StaticFiles\img\icons\icon-48x48.png" />
     <Content Include="StaticFiles\img\Imagen de Bienvenida.png" />
+    <Content Include="StaticFiles\img\photos\unsplash-1.jpg" />
+    <Content Include="StaticFiles\img\photos\unsplash-2.jpg" />
+    <Content Include="StaticFiles\img\photos\unsplash-3.jpg" />
+    <Content Include="StaticFiles\js\app.js" />
     <Content Include="StaticFiles\js\bootstrap.js" />
     <Content Include="StaticFiles\js\config.js" />
     <Content Include="StaticFiles\js\helpers.js" />
@@ -198,6 +209,7 @@
     <Content Include="Views\Shared\_LayoutInterno.cshtml" />
     <Content Include="Views\Shared\_LayoutExterno.cshtml" />
     <Content Include="Views\Home\Registro.cshtml" />
+    <Content Include="StaticFiles\js\app.js.map" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

@@ -2,135 +2,187 @@
 <html lang="en">
 <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Finanzas</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>@ViewBag.Title</title>
+
     @Styles.Render("~/Content/css")
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <script src="~/StaticFiles/js/app.js"></script>
+   
+    <link href="~/StaticFiles/css/app.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 
-    <meta name="description" content="" />
+    <link rel="canonical" href="https://demo-basic.adminkit.io/" />
+
+   
+   
 </head>
-
 <body>
-    <div class="layout-wrapper layout-content-navbar">
-        <div class="layout-container">
+    <div class="wrapper">
+        <!-- Sidebar -->
+        <nav id="sidebar" class="sidebar js-sidebar">
+            <div class="sidebar-content js-simplebar">
+                <a class="sidebar-brand" href="@Url.Action("Principal","Home")">
+                    <span class="align-middle">Finanzas</span>
+                </a>
 
-            <!-- Sidebar -->
-            <aside id="layout-menu" class="layout-menu menu-vertical menu bg-menu-theme">
-                <div class="app-brand demo">
-                    <a href="~/Home/Principal" class="app-brand-link">
-                        <span class="app-brand-text demo menu-text fw-bolder ms-2">Finanzas</span>
-                    </a>
-                    <!-- Toggle para cerrar menú en móviles -->
-                    <a href="javascript:void(0);" class="layout-menu-toggle menu-link text-large ms-auto d-xl-none">
-                        <i class="bx bx-chevron-left bx-sm align-middle"></i>
-                    </a>
-                </div>
-
-                <ul class="menu-inner py-1">
+                <ul class="sidebar-nav">
                     <!-- Inicio -->
-                    <li class="menu-item @(ViewBag.Title == "Principal" ? "active" : "")">
-                        <a href="~/Home/Principal" class="menu-link">
+                    <li class="sidebar-item @(ViewBag.Title == "Principal" ? "active" : "")">
+                        <a class="sidebar-link" href="~/Home/Principal">
                             <i class="menu-icon tf-icons bx bx-home-circle"></i>
-                            <div>Inicio</div>
+                            <span class="align-middle">Inicio</span>
                         </a>
                     </li>
 
                     <!-- Categorías -->
-                    <li class="menu-item">
-                        <a href="~/Categoria/Index" class="menu-link">
+                    <li class="sidebar-item">
+                        <a class="sidebar-link" href="~/Categoria/Index">
                             <i class="menu-icon tf-icons bx bx-category"></i>
-                            <div>Categorías</div>
+                            <span class="align-middle">Categorías</span>
                         </a>
                     </li>
 
                     <!-- Ingresos -->
-                    <li class="menu-item">
-                        <a href="~/Ingresos/Index" class="menu-link">
+                    <li class="sidebar-item">
+                        <a class="sidebar-link" href="~/Ingresos/Index">
                             <i class="menu-icon tf-icons bx bx-money"></i>
-                            <div>Ingresos</div>
+                            <span class="align-middle">Ingresos</span>
                         </a>
                     </li>
 
                     <!-- Gastos -->
-                    <li class="menu-item">
-                        <a href="~/Gastos/Index" class="menu-link">
+                    <li class="sidebar-item">
+                        <a class="sidebar-link" href="~/Gastos/Index">
                             <i class="menu-icon tf-icons bx bx-cart"></i>
-                            <div>Gastos</div>
+                            <span class="align-middle">Gastos</span>
                         </a>
                     </li>
 
                     <!-- Tarjetas -->
-                    <li class="menu-item">
-                        <a href="~/Tarjetas/Index" class="menu-link">
+                    <li class="sidebar-item">
+                        <a class="sidebar-link" href="~/Tarjetas/Index">
                             <i class="menu-icon tf-icons bx bx-credit-card"></i>
-                            <div>Tarjetas</div>
+                            <span class="align-middle">Tarjetas</span>
                         </a>
                     </li>
 
                     <!-- Notificaciones -->
-                    <li class="menu-item">
-                        <a href="~/Notificaciones/Index" class="menu-link">
+                    <li class="sidebar-item">
+                        <a class="sidebar-link" href="~/Notificaciones/Index">
                             <i class="menu-icon tf-icons bx bx-bell"></i>
-                            <div>Notificaciones</div>
+                            <span class="align-middle">Notificaciones</span>
                         </a>
                     </li>
 
                     <!-- Mi Ahorro -->
-                    <li class="menu-item">
-                        <a href="~/Ahorro/Index" class="menu-link">
+                    <li class="sidebar-item">
+                        <a class="sidebar-link" href="~/Ahorro/Index">
                             <i class="menu-icon tf-icons bx bx-trophy"></i>
-
-                            <div>Mi ahorro</div>
+                            <span class="align-middle">Mi ahorro</span>
                         </a>
                     </li>
 
                     <!-- Configuración -->
-                    <li class="menu-item">
-                        <a href="~/Configuracion/Index" class="menu-link">
+                    <li class="sidebar-item">
+                        <a class="sidebar-link" href="~/Configuracion/Index">
                             <i class="menu-icon tf-icons bx bx-cog"></i>
-                            <div>Configuración</div>
+                            <span class="align-middle">Configuración</span>
                         </a>
                     </li>
                 </ul>
-            </aside>
-            <!-- /Sidebar -->
-            <!-- Layout page -->
-            <div class="layout-page">
-                <!-- Navbar -->
-                <nav class="layout-navbar navbar navbar-expand-xl navbar-detached align-items-center bg-navbar-theme">
-                    <div class="layout-menu-toggle navbar-nav align-items-xl-center me-3 me-xl-0 d-xl-none">
-                        <a class="nav-item nav-link px-0 me-xl-4" href="javascript:void(0)">
-                            <i class="bx bx-menu bx-sm"></i>
-                        </a>
-                    </div>
-                </nav>
-
-                <!-- Content wrapper (necesario) -->
-                <div class="content-wrapper">
-                    <!-- Content -->
-                    <div class="container-xxl flex-grow-1 container-p-y">
-                        @RenderBody()
-                    </div>
-                    <!-- /Content -->
-                    <!-- Footer fuera del container del contenido -->
-                    <footer class="content-footer footer bg-footer-theme">
-                        <div class="container-xxl d-flex flex-wrap justify-content-between py-2 flex-md-row flex-column">
-                            <div class="mb-2 mb-md-0">
-                                © @DateTime.Now.Year, ThemeSelection
-                            </div>
-                        </div>
-                    </footer>
-
-                    <div class="content-backdrop fade"></div>
-                </div>
-                <!-- /Content wrapper -->
             </div>
-            <!-- /Layout page -->
+        </nav>
+        <!-- /Sidebar -->
+        <!-- Main -->
+        <div class="main">
+            <!-- Navbar mínima (solo toggle) -->
+            <nav class="navbar navbar-expand navbar-light navbar-bg">
+                <a class="sidebar-toggle js-sidebar-toggle">
+                    <i class="hamburger align-self-center"></i>
+                </a>
+                <div class="navbar-collapse collapse">
+                    <ul class="navbar-nav navbar-align">
+
+                        <!-- Notificaciones -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-icon dropdown-toggle" href="#" id="alertsDropdown" data-bs-toggle="dropdown">
+                                <div class="position-relative">
+                                    <i class="align-middle" data-feather="bell"></i>
+                                    <span class="indicator">4</span>
+                                </div>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-lg dropdown-menu-end py-0" aria-labelledby="alertsDropdown">
+                                <div class="dropdown-menu-header">
+                                    4 nuevas notificaciones
+                                </div>
+                                <div class="list-group">
+                                    <a href="#" class="list-group-item">
+                                        <div class="row g-0 align-items-center">
+                                            <div class="col-2">
+                                                <i class="text-danger" data-feather="alert-circle"></i>
+                                            </div>
+                                            <div class="col-10">
+                                                <div class="text-dark">Actualización completada</div>
+                                                <div class="text-muted small mt-1">Reinicia el sistema para aplicar los cambios.</div>
+                                                <div class="text-muted small mt-1">Hace 30 min</div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="dropdown-menu-footer">
+                                    <a href="#" class="text-muted">Ver todas</a>
+                                </div>
+                            </div>
+                        </li>
+
+                       
+
+                        <!-- Perfil -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle d-none d-sm-inline-block" href="#" data-bs-toggle="dropdown">
+                                <img src="~/StaticFiles/img/avatars/avatar.jpg" 
+                                class="avatar img-fluid rounded me-1" alt="Usuario" />
+                                <span class="text-dark">Franco Coward</span>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-end">
+                                <a class="dropdown-item" href="#"><i class="align-middle me-1" data-feather="user"></i> Perfil</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#"><i class="align-middle me-1" data-feather="log-out"></i> Cerrar sesión</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+            </nav>
+
+            <!-- Contenido -->
+            <main class="content">
+                <div class="container-fluid p-0">
+                    @RenderBody()
+                </div>
+            </main>
+
+            <!-- Footer simple -->
+            <footer class="footer">
+                <div class="container-fluid">
+                    <div class="row text-muted">
+                        <div class="col-12 text-center">
+                            <p class="mb-0">© @DateTime.Now.Year · Finanzas</p>
+                        </div>
+                    </div>
+                </div>
+            </footer>
         </div>
+        <!-- /Main -->
     </div>
 
-    @Scripts.Render("~/bundles/app")
-    <script async defer src="https://buttons.github.io/buttons.js"></script>
-</body>
+   
 
+    @Scripts.Render("~/bundles/app")
+    @RenderSection("scripts", required: false)
+</body>
 </html>
